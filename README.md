@@ -8,12 +8,14 @@ The **telnet** package provides an API in a style similar to the "net/http" libr
 
 (TELNETS is *secure TELNET*, with the TELNET protocol over a secured TLS (or SSL) connection.)
 
+This repository is a fork of https://github.com/reiver/go-telnet
+
 
 ## Documention
 
-Online documentation, which includes examples, can be found at: http://godoc.org/github.com/reiver/go-telnet
+Online documentation, which includes examples, can be found at: http://godoc.org/github.com/nugget/go-telnet
 
-[![GoDoc](https://godoc.org/github.com/reiver/go-telnet?status.svg)](https://godoc.org/github.com/reiver/go-telnet)
+[![GoDoc](https://godoc.org/github.com/nugget/go-telnet?status.svg)](https://godoc.org/github.com/nugget/go-telnet)
 
 
 ## Very Simple TELNET Server Example
@@ -29,7 +31,7 @@ This particular TELNET server just echos back to the user anything they "submit"
 package main
 
 import (
-	"github.com/reiver/go-telnet"
+	"github.com/nugget/go-telnet"
 )
 
 func main() {
@@ -66,7 +68,7 @@ The code to make a TELNETS server is very similar to the code to make a TELNET s
 package main
 
 import (
-	"github.com/reiver/go-telnet"
+	"github.com/nugget/go-telnet"
 )
 
 func main() {
@@ -83,7 +85,7 @@ func main() {
 ```
 
 If you wanted to test out this very very simple TELNETS server, get the `telnets` client program from here:
-https://github.com/reiver/telnets
+https://github.com/nugget/telnets
 
 
 ## TELNET Client Example:
@@ -91,7 +93,7 @@ https://github.com/reiver/telnets
 package main
 
 import (
-	"github.com/reiver/go-telnet"
+	"github.com/nugget/go-telnet"
 )
 
 func main() {
@@ -108,7 +110,7 @@ func main() {
 package main
 
 import (
-	"github.com/reiver/go-telnet"
+	"github.com/nugget/go-telnet"
 
 	"crypto/tls"
 )
@@ -127,7 +129,7 @@ func main() {
 
 ##  TELNET Shell Server Example
 
-A more useful TELNET servers can be made using the `"github.com/reiver/go-telnet/telsh"` sub-package.
+A more useful TELNET servers can be made using the `"github.com/nugget/go-telnet/telsh"` sub-package.
 
 For example:
 ```
@@ -135,9 +137,9 @@ package main
 
 
 import (
-	"github.com/reiver/go-oi"
-	"github.com/reiver/go-telnet"
-	"github.com/reiver/go-telnet/telsh"
+	"github.com/nugget/go-oi"
+	"github.com/nugget/go-telnet"
+	"github.com/nugget/go-telnet/telsh"
 
 	"io"
 	"time"
@@ -240,13 +242,13 @@ func main() {
 }
 ```
 
-TELNET servers made using the `"github.com/reiver/go-telnet/telsh"` sub-package will often be more useful
+TELNET servers made using the `"github.com/nugget/go-telnet/telsh"` sub-package will often be more useful
 as it makes it easier for you to create a *shell* interface.
 
 
 # More Information
 
-There is a lot more information about documentation on all this here: http://godoc.org/github.com/reiver/go-telnet
+There is a lot more information about documentation on all this here: http://godoc.org/github.com/nugget/go-telnet
 
 (You should really read those.)
 
